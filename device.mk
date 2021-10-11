@@ -203,11 +203,6 @@ PRODUCT_PACKAGES += \
     sap.conf \
     xtwifi.conf
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service
-
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
