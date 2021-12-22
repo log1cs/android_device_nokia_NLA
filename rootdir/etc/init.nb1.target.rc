@@ -68,9 +68,6 @@ service vendor.gx_fpd /vendor/bin/gx_fpd
 on property:sys.boot_completed=1
     restorecon_recursive /data/system/fingerprint/
 
-on property:vold.sd=1
-    write /sys/devices/virtual/bdi/179:0/read_ahead_kb 1024
-
 on property:vendor.wifi.mtu=true
    write /sys/class/net/wlan0/mtu 1440
 
