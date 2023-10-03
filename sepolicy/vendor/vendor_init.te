@@ -2,4 +2,5 @@ set_prop(vendor_init, vendor_power_prop)
 
 allow init adsprpcd_file:file mounton;
 
+allow vendor_init rootfs:dir read;
 

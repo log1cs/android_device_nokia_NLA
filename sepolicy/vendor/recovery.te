@@ -1,0 +1,7 @@
+allow recovery pstorefs:dir { search };
+allow recovery pstorefs:file { read open };
+
+allow recovery sysfs_graphics:dir { search };
+allow recovery sysfs_graphics:file { read write open getattr };
+
+allow recovery recovery:capability { sys_resource };
