@@ -111,24 +111,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "CDSchedtuneBoost",
-      "Path": "/dev/stune/camera-daemon/schedtune.boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CDCpusetCpus",
-      "Path": "/dev/cpuset/camera-daemon/cpus",
-      "Values": [
-        "0-5",
-        "0-7"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
