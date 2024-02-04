@@ -20,14 +20,14 @@ vendor/lib64/libsndmonitor.so|0ebc578de3a8001aea56ffad2307107f5f05b439
 
 # Audio (ACDB)
 vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/etc/acdbdata/NB1/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/NB1/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/NB1/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/NB1/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/NB1/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/NB1/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/NB1/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/NB1/workspaceFile.qwsp:vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+vendor/etc/acdbdata/NB1/Bluetooth_cal.acdb
+vendor/etc/acdbdata/NB1/General_cal.acdb
+vendor/etc/acdbdata/NB1/Global_cal.acdb
+vendor/etc/acdbdata/NB1/Handset_cal.acdb
+vendor/etc/acdbdata/NB1/Hdmi_cal.acdb
+vendor/etc/acdbdata/NB1/Headset_cal.acdb
+vendor/etc/acdbdata/NB1/Speaker_cal.acdb
+vendor/etc/acdbdata/NB1/workspaceFile.qwsp
 
 # Audio (Firmware)
 etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
@@ -52,23 +52,22 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libfastcrc.so
 
-# ADSP (Modules) - from DDV_sprout - QKQ1.191014.001
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
+# ADSP (Modules)
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libvpp_frc.so
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
 # ANT+ - from DDV_sprout - QKQ1.191014.001
 -lib/libantradio.so
