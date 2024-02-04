@@ -70,10 +70,6 @@ function blob_fixup() {
         product/lib64/libdpmframework.so)
             "${PATCHELF}" --add-needed "libshim_cutils.so" "${2}"
             ;;
-        # Convert sdm660 to msm8998
-        vendor/lib/hw/vulkan.msm8998.so|vendor/lib64/hw/vulkan.msm8998.so)
-            "${PATCHELF}" --set-soname "vulkan.msm8998.so" "${2}"
-            ;;
         # Health
         vendor/bin/hw/android.hardware.health@2.0-service)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
