@@ -62,6 +62,9 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "liblog.so" "${2}"
             "${PATCHELF}" --add-needed "libshim_binder.so" "${2}"
             ;;
+        # Hexedit gxfingerprint to load Goodix firmware from /vendor/firmware/
+        vendor/lib64/hw/gxfingerprint.default.so)
+            sed -i -e 's|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g' "${2}"
     esac
 }
 
