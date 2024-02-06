@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/nokia/NLA
+
 # Inherit from common device tree
 include device/nokia/msm8998-common/BoardConfigCommon.mk
 
