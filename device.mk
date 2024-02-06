@@ -6,5 +6,9 @@
 
 DEVICE_PATH := device/nokia/NLA
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_binder
+
 # Inherit device specific vendor makefiles
 $(call inherit-product, vendor/nokia/NLA/NLA-vendor.mk)

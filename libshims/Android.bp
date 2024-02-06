@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2020 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Fingerprint
+cc_library_shared {
+    name: "libshim_binder",
+    proprietary: true,
+    defaults: ["hidl_defaults"],
+    compile_multilib: "64",
+    srcs: [
+        "PermissionCache.cpp",
+    ],
+}

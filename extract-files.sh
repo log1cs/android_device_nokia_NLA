@@ -53,6 +53,19 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        # Patch gx_fpd for VNDK support
+        vendor/bin/gx_fpd)
+            "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
+            "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            "${PATCHELF}" --add-needed "libshim_binder.so" "${2}"
+            ;;
+    esac
+}
+
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
