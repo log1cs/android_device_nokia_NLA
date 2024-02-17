@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     lights.msm8998
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
 # Shims
 PRODUCT_PACKAGES += \
     libshim_binder
