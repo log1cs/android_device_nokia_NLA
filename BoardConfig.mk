@@ -11,3 +11,6 @@ include device/nokia/msm8998-common/BoardConfigCommon.mk
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_NLA_defconfig
+
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
