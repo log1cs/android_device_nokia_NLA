@@ -403,7 +403,7 @@ vendor/bin/gx_fpd
 vendor/bin/qfp-daemon
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.msm8998.so
 vendor/lib64/hw/gxfingerprint.default.so
-vendor/lib64/libfp_client.so
+vendor/lib64/libfp_client.so|7f19f0f48cc8cbbaae079263053f61033be7bcdf
 vendor/lib64/libfpjni.so
 vendor/lib64/libfpservice.so
 vendor/lib64/libqfp-service.so
