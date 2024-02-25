@@ -25,7 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_binder
+    libshim_binder \
+    libshim_gui
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
