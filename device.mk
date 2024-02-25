@@ -14,6 +14,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_binder
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_nokia
