@@ -55,6 +55,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+	# Load audiosphere from the new path
+    	system_ext/etc/permissions/audiosphere.xml)
+            sed -i 's|/system/framework/audiosphere.jar|/system_ext/framework/audiosphere.jar|g' "${2}"
+            ;;
         # Patch gx_fpd for VNDK support
         vendor/bin/gx_fpd)
             "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
