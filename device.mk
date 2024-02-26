@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.nb1.camera.rc \
+    init.nb1.target.rc
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_nokia
